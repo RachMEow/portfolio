@@ -1,0 +1,22 @@
+.game {
+    padding: 20px;
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #ffcc00;
+    cursor: default;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #ffcc00;
+}

@@ -1,0 +1,24 @@
+.start-button {
+    background: linear-gradient(135deg, #ffe135, #ffcc00); /* 黄色渐变背景 */
+    color: #000; /* 黑色文字 */
+    font-family: 'Press Start 2P', cursive; /* 8-bit 字体 */
+    font-size: 1rem;
+    text-transform: uppercase; /* 大写字母 */
+    padding: 10px 20px;
+    border: 4px solid #000; /* 粗边框 */
+    box-shadow: 4px 4px 0 #333; /* 模拟8-bit风格的阴影 */
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.start-button:hover {
+    background: linear-gradient(135deg, #ffcc00, #ffe135); /* 颜色反转渐变 */
+    box-shadow: 4px 4px 0 #555; /* 加深阴影 */
+    transform: translate(-2px, -2px); /* 模拟悬浮效果 */
+}
+
+.start-button:active {
+    background: #ff9900; /* 点击时颜色变深 */
+    box-shadow: 2px 2px 0 #333; /* 阴影缩小 */
+}

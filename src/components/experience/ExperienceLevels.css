@@ -1,0 +1,18 @@
+.experience-levels {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

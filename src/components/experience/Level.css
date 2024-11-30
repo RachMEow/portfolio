@@ -1,0 +1,26 @@
+.level {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.level:hover {
+    transform: scale(1.05);
+}
+
+.play-button {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: #ffe135;
+}
