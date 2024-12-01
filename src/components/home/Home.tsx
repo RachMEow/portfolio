@@ -31,7 +31,7 @@ const Home = () => {
     return (
         <div className="home-container">
             <div className="title-section">
-                <h1 className="title">Welcome to Jiarui&apos;s World</h1>
+                <h1 className="title">Welcome to Javacado&apos;s World</h1>
                 <p className="subtitle">A Full Stack Developer with an 8-bit twist!</p>
             </div>
             <div className="avatar-section">

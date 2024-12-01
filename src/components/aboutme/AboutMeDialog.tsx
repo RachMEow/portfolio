@@ -18,7 +18,7 @@ const AboutMeDialog: React.FC<AboutMeDialogProps> = ({onClose, position, closing
                 </button>
                 <h1>About Me</h1>
                 <ul>
-                    <li><strong>Name:</strong> Jiarui (Ja-ree) Sun</li>
+                    <li><strong>Name:</strong> Javacado Sun</li>
                     <li><strong>Profession:</strong> Full Stack Developer</li>
                     <li><strong>Skills:</strong> Java, Angular, React, more</li>
                     <li><strong>Hobbies:</strong> Painting, Photography</li>

@@ -38,7 +38,6 @@
     padding: 20px;
     width: fit-content;
     text-align: center;
-    font-family: 'Press Start 2P', cursive; /* 像素字体 */
     color: #fff;
     box-shadow: 8px 8px 0 #000; /* 像素风阴影 */
     pointer-events: auto; /* 对对话框启用点击事件 */

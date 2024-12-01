@@ -1,7 +1,6 @@
 .home-container {
     background: linear-gradient(135deg, #ffe5e5, #ffccff, #ffcc00); /* 渐变从浅粉到yellow */
     color: #ff69b4; /* 亮粉色文字 */
-    font-family: 'Press Start 2P', cursive;
     height: 100vh;
     display: flex;
     flex-direction: column;
