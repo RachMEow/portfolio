@@ -50,7 +50,7 @@ const ExperienceLevels = () => {
                 ))}
             </div>
             <button
-                className="start-button"
+                className="pixel-button"
                 onClick={() => navigate("/")}
             >
                 Back to Home

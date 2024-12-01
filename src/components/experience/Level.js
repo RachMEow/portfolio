@@ -9,7 +9,7 @@ const Level = ({level}) => {
             <p>{level.year}</p>
             <p>{level.description}</p>
             <button
-                className="start-button"
+                className="pixel-button"
                 onClick={() => alert(`Starting game for ${level.company}`)}
             >
                 Play
