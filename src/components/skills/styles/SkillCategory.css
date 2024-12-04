@@ -1,0 +1,24 @@
+.skill-category {
+    background-color: #333;
+    border: 2px solid #ffcc00;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 #000;
+}
+
+.category-title {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-item {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 5px 0;
+}

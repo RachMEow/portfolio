@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import "./Home.css";
 import "../../styles/Buttons.css";
 import AboutMeDialog from "../aboutme/AboutMeDialog";
+import PixelButton from "../common/PixelButton";
 
 const Home = () => {
     const navigate = useNavigate(); // 使用 useNavigate 钩子
@@ -28,6 +29,12 @@ const Home = () => {
         setShowDialog(true);
     };
 
+    let playHoverSound = () => {
+        let buttonHoverAudio = new Audio("/assets/music/hover.mp3");
+        buttonHoverAudio.play();
+    }
+
+
     return (
         <div className="home-container">
             <div className="title-section">
@@ -38,16 +45,17 @@ const Home = () => {
                 <img src="/assets/pixel_avatar_yellow.png"
                      alt="Pixel Avatar"
                      className="avatar"
+                     onMouseEnter={playHoverSound}
                      onClick={handleAvatarClick}
                 />
             </div>
             <div className="start-button-section">
-                <button
-                    className="pixel-button"
-                    onClick={() => navigate("/experience-levels")} // 点击事件
-                >
-                    Start Adventure
-                </button>
+                <PixelButton onClick={() => navigate("/experience-levels")}
+                             title={"Start Adventure"}/>
+            </div>
+            <div>
+                <PixelButton onClick={() => navigate("/skills-book")}
+                             title={"Skills Book"}/>
             </div>
             {showDialog && (
                 <AboutMeDialog
