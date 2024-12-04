@@ -20,19 +20,31 @@
     }
 }
 
-
 .dialog-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 1;
     pointer-events: none; /* 阻止点击其他区域 */
 }
 
+.avatar-title-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-avatar-section {
+    padding: 85px;
+    flex-shrink: 1;
+    margin-right: 35px;
+}
+
 .dialog-box {
-    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
     background: #333; /* 深色背景 */
     border: 4px solid #ffcc00; /* 像素风格的黄色边框 */
     padding: 20px;

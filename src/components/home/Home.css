@@ -1,5 +1,11 @@
 .home-container {
-    background: linear-gradient(135deg, #ffe5e5, #ffccff, #ffcc00); /* 渐变从浅粉到yellow */
+    background: repeating-linear-gradient(
+            45deg,
+            #1A1A1A 0px,
+            #1A1A1A 10px,
+            #2C2C54 10px,
+            #2C2C54 20px
+    );
     color: #ff69b4; /* 亮粉色文字 */
     height: 100vh;
     display: flex;
@@ -26,6 +32,7 @@
 
 .avatar-section {
     margin: 20px 0;
+    z-index: 2;
 }
 
 .avatar {

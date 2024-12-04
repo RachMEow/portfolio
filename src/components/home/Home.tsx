@@ -20,20 +20,14 @@ const Home = () => {
     };
 
     const handleAvatarClick = (event: React.MouseEvent<HTMLImageElement>) => {
-        const avatarRect = event.currentTarget.getBoundingClientRect();
+        const avatarRect = event.currentTarget.getBoundingClientRect()
         console.log("avatarRect.top", avatarRect.top)
         setDialogPosition({
-            top: avatarRect.top, // 考虑页面滚动
-            left: avatarRect.right + 20, // 头像右边 + 20px 间距
+            top: avatarRect.top - 15, // 考虑页面滚动
+            left: avatarRect.left - 15, // 头像右边 + 20px 间距
         });
         setShowDialog(true);
     };
-
-    let playHoverSound = () => {
-        let buttonHoverAudio = new Audio("/assets/music/hover.mp3");
-        buttonHoverAudio.play();
-    }
-
 
     return (
         <div className="home-container">
@@ -45,7 +39,6 @@ const Home = () => {
                 <img src="/assets/pixel_avatar_yellow.png"
                      alt="Pixel Avatar"
                      className="avatar"
-                     onMouseEnter={playHoverSound}
                      onClick={handleAvatarClick}
                 />
             </div>

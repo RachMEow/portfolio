@@ -12,17 +12,26 @@ interface AboutMeDialogProps {
 const AboutMeDialog: React.FC<AboutMeDialogProps> = ({onClose, position, closing}) => {
     return (
         <div className="dialog-overlay">
-            <div className={`dialog-box ${closing ? "closing" : ""}`}>
+            <div className={`dialog-box ${closing ? "closing" : ""}`}
+                 style={{
+                     top: position.top,
+                     left: position.left
+                 }}
+            >
+                <div className="avatar-title-section">
+                    <div className="about-me-avatar-section"/>
+                    <div style={{alignContent: "center"}}><h1>Javacado</h1></div>
+                </div>
+                <div className="about-me-section">
+                    <ul>
+                        <li><strong>Profession:</strong> Full Stack Developer</li>
+                        <li><strong>Skills:</strong> Java, Angular, React, more</li>
+                        <li><strong>Hobbies:</strong> Painting, Photography</li>
+                    </ul>
+                </div>
                 <button className="pixel-button close-button" onClick={onClose}>
                     X
                 </button>
-                <h1>About Me</h1>
-                <ul>
-                    <li><strong>Name:</strong> Javacado Sun</li>
-                    <li><strong>Profession:</strong> Full Stack Developer</li>
-                    <li><strong>Skills:</strong> Java, Angular, React, more</li>
-                    <li><strong>Hobbies:</strong> Painting, Photography</li>
-                </ul>
             </div>
         </div>
     );
