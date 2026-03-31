@@ -3,18 +3,76 @@
     background-color: #282c34;
     color: #ffffff;
     text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+.office {
+    display: inline-block;
+    border: 2px solid #ffffff;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #444;
+    position: relative;
+    image-rendering: pixelated;
+}
+
+.wall {
+    background-color: #666;
+}
+
+.floor {
+    background-color: #8B4513; /* 木地板色 */
+}
+
+.desk {
+    background-color: #654321;
+}
+
+.player {
+    background-color: #ff0000 !important;
+    border-radius: 50%;
+}
+
+.item {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    image-rendering: pixelated;
+}
+
+.computer {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.door {
+    background-color: #8B4513;
+    border: 2px solid #654321;
+}
+
+.objectives {
+    margin-top: 20px;
 }
 
 .completed {
     text-decoration: line-through;
     color: #ffcc00;
-    cursor: default;
 }
 
 li {
     list-style: none;
     margin: 10px 0;
-    cursor: pointer;
 }
 
 li:hover {

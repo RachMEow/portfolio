@@ -2,7 +2,7 @@ import React from "react";
 import "./Level.css";
 import "../../styles/Buttons.css";
 
-const Level = ({level}) => {
+const Level = ({level, onPlay}) => {
     return (
         <div className="level">
             <h2>{level.company}</h2>
@@ -10,7 +10,7 @@ const Level = ({level}) => {
             <p>{level.description}</p>
             <button
                 className="pixel-button"
-                onClick={() => alert(`Starting game for ${level.company}`)}
+                onClick={() => onPlay(level)}
             >
                 Play
             </button>

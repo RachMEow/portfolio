@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import Level from "./Level";
+import Game from "./Game";
 import "./ExperienceLevels.css";
 import {useNavigate} from "react-router-dom";
 import "../../styles/Buttons.css";
 
 const ExperienceLevels = () => {
-    const navigate = useNavigate(); // 使用 useNavigate 钩子
+    const navigate = useNavigate();
+    const [selectedLevel, setSelectedLevel] = useState(null);
     const levels = [
         {
             id: 1,
@@ -41,12 +43,38 @@ const ExperienceLevels = () => {
         },
     ];
 
+    const handlePlay = (level) => {
+        if (level.company === "Motorola Solutions") {
+            setSelectedLevel(level);
+        } else {
+            alert("这个游戏还在开发中！只有Motorola Solutions的关卡可用。");
+        }
+    };
+
+    const handleBack = () => {
+        setSelectedLevel(null);
+    };
+
+    if (selectedLevel) {
+        return (
+            <div className="experience-levels">
+                <Game objectives={selectedLevel.objectives} />
+                <button
+                    className="pixel-button"
+                    onClick={handleBack}
+                >
+                    Back to Levels
+                </button>
+            </div>
+        );
+    }
+
     return (
         <div className="experience-levels">
             <h1 className="title">Experience Levels</h1>
             <div className="timeline">
                 {levels.map((level) => (
-                    <Level key={level.id} level={level}/>
+                    <Level key={level.id} level={level} onPlay={handlePlay}/>
                 ))}
             </div>
             <button
